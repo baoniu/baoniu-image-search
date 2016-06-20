@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Timestamp microservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="header">
+        API: Image Search Abstraction Layer
+    </h1>
+    <h3>Example usage:</h3>
+    <code><a target="_blank" href="<%=host_domain%>/api/imagesearch/baoniu?offset=1"><%=host_domain%>/api/imagesearch/baoniu?offset=1</a></code><br>
+    <h3>Example output:</h3>
+    <code>
+        [{
+            "url":"http://i00.i.aliimg.com/wsphoto/v0/32248962918_1/TecsunPL-606-full-band-radio-semiconductor-radio-fm-radios-portatil-kit-vintage-portable-radio-am-fm.jpg",
+            "snippet":"... phones suppliers on BAONIU | Alibaba Group",
+            "thumbnail":"http://ts4.mm.bing.net/th?id=OIP.M39ea719dbbb4ceac1f448d7289803fa1o0&pid=15.1",
+            "context":"http://www.aliexpress.com/store/product/TecsunPL-606-full-band-radio-semiconductor-radio-fm-radios-portatil-kit-vintage-portable-radio-am-fm/1427238_32248962918.html"
+        }]
+    </code>
+
+    <h3>Example usage:</h3>
+    <code><a target="_blank" href="<%=host_domain%>/api/latest/imagesearch"><%=host_domain%>/api/latest/imagesearch</a></code>
+    <h3>Example output:</h3>
+    <code>
+        [{
+            "term":"baoniu",
+            "when":"2016-06-20 15:12:40"
+        }]
+    </code>
+</div>
+</body>
+</html>
